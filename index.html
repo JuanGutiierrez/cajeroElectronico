@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/css/style.css" />
+    <link
+    rel="shortcut icon"
+    href="../style/img/logo.png"
+    type="image/x-icon"
+    />
+    <title>Cajero electronico</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../style/img/logo.png" alt="" />
+        <h1 class="tituloEncabezado">CAJERO <br />ELECTRÓNICO</h1>
+    </header>
+    <section class="contenedorCerrarSesion">
+        <input type="button" id="botonCerrar" class="inputOperaciones" value="Cerrar sesión" />
+    </section>
+    <main class="contenedorBotones" id="contenedorBotones">
+        <h2 class="seleccioneOperacion">SELECCIONE UNA OPERACIÓN</h2>
+        <form action="" class="formOperaciones">
+            <article class="articleOperaciones">
+                <input type="button" id="botonSaldo" class="inputOperaciones" value="Consultar saldo" />
+                <input type="button" id="botonRetirarDinero" class="inputOperaciones" value="Retirar dinero" />
+            </article>
+            <article class="articleOperaciones">
+                <input type="button" id="botonTransferirDinero" class="inputOperaciones" value="Transferir dinero" />
+                <input type="button" id="botonConsignarDinero" class="inputOperaciones" value="Consignar saldo" />
+            </article>
+            
+        </form>
+    </main>
+    
+    <section id="contenedorOperaciones" class="opciones">
+    </section>
+
+    <footer class="divisor">
+    
+    </footer>
+
+<script src="../javaScript/operaciones.js"></script>
+</body>
+</html>

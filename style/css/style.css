@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  border: #002e94 solid 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 55%;
+}
+
+main {
+  text-align: center;
+}
+
+/* LOGIN ERRADO */
+.bodyLoginErrado {
+  background-color: #002e94;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionLoginErrado {
+  margin-top: 20%;
+  width: 60%;
+  height: 20%;
+  border-bottom: #ffffff 5px solid;
+}
+
+.h1LoginErrado {
+  font-weight: 800;
+  text-align: center;
+  color: #ffffff;
+  font-size: 300%;
+}
+
+/* VISTA LOGIN */
+
+.logo {
+  width: 150px;
+  height: 90%;
+  margin: 1%;
+}
+
+.tituloEncabezado {
+  font-weight: 800;
+  text-align: center;
+  color: #002e94;
+  font-size: 300%;
+}
+
+.contenedorPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.contenedorTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #002e94 5px solid;
+  margin-top: 6%;
+  margin-bottom: 4%;
+  width: 30%;
+}
+
+.tituloInicioSesion {
+  font-size: 50px;
+}
+
+.contenedorInputs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.entradaUsuario {
+  margin: 1%;
+  width: 30%;
+  height: 50px;
+  border: #002e94 5px solid;
+  outline: none;
+  cursor: text;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+.botonContinuar {
+  margin: 1%;
+  width: 12%;
+  height: 50px;
+  background-color: #000000;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.pieDePagina {
+  background-color: #002e94;
+  width: 100%;
+  height: 70px;
+  padding: 54px 0;
+  margin-top: 3%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+/* VISTA PRINCIPAL */
+.contenedorBotones {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #002e94;
+  font-size: large;
+  gap: 100px;
+}
+
+.seleccioneOperacion {
+  margin-top: 15%;
+}
+
+.contenedorCerrarSesion {
+  display: flex;
+  justify-content: flex-end;
+  font-size: xx-large;
+}
+
+.inputOperaciones {
+  border: none;
+  border-bottom: #002e94 5px solid;
+  margin: 2%;
+  width: 12%;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  background-color: transparent;
+}
+
+.formOperaciones {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+.articleOperaciones {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 8%;
+  gap: 30%;
+}
+
+.opciones {
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 11.1%;
+}
+
+.divisor {
+  background-color: #002e94;
+  width: 100%;
+  height: 70px;
+  padding: 54px 0;
+  margin-top: 1%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+/* confirmacion cerrar sesion */
+
+.contenedorOpcionesCerrarSesion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tituloCerraSesion {
+  width: 100%;
+  border-bottom: #002e94 solid 5px;
+  font-size: xx-large;
+  margin-bottom: 10%;
+}
+
+.opcionesCerrarSesion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.botonesOperaciones {
+  margin: 1%;
+  width: 100%;
+  height: 60px;
+  background-color: #000000;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/*BOTONES CERRAR SESION*/
+
+#salir {
+  color: #ffffff;
+  background-color: #002e94;
+  border: #002e94;
+}
+
+#noSalir {
+  color: #000000;
+  background-color: transparent;
+  border: #000000 1px solid;
+}
+
+/* OPCION SALDO */
+
+#contenedorOperaciones {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contenedorBotonYTituloSaldo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  font-size: 20px;
+}
+
+.tablaSaldo {
+  border: 6px solid #002e94;
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+}
+
+#cuerpoTablaSaldo {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.filasTablaSaldo {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.letraNormal {
+  font-weight: 300;
+}
+
+.filasTablaSaldo2 {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.botonCerrarVentanaSaldo {
+  display: inline;
+}
+
+#contenedorTextoSaldo {
+  display: block;
+  width: 50%;
+}
+
+#botonCerrarVentanaSaldo {
+  border: none;
+  border-bottom: #002e94 5px solid;
+  margin: 2%;
+  width: 18%;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  background-color: transparent;
+}
+
+#contenedorBotonYTituloTransferir,#contenedorInputInformacion,
+#contenedorBotonYInputTransferir{
+  margin-left: 8%;
+}
+
+#tablaTransferencia,.tituloMovimientos2{
+  margin-left: 9.5%;
+}
+
+/* OPCION RETIRAR DINERO*/
+
+#contendorBotonYtituloRetirar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  font-size: 20px;
+}
+
+#contenedorElementosInputRetirar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  font-size: 20px;
+  gap: 10%;
+}
+
+#campoRetiro{
+  width: 35%;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  border: #002e94 5px solid;
+}
+
+::placeholder{
+  color: #000000;
+}
+
+#botonRetiro{
+  width: 20%;
+  height: 6vh;
+  font-size: 20px;
+  text-align: center;
+  background-color: #002e94;
+  border: #002e94 5px solid;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+#botonCerrarVentanaRetirar {
+  border: none;
+  border-bottom: #002e94 5px solid;
+  margin: 2%;
+  width: 10%;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  background-color: transparent;
+}
+
+#tituloMovimientos{
+  margin-right: 38.5%;
+  margin-top: 1.5%;
+}
+
+#contenedorTablaRetiro{
+  border: 6px solid #002e94;
+  margin-top: 1%;
+  width: 50%;
+}
+
+.filasTablaRetirar td{
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #002e94 solid 5px;
+
+}
+
+.fechaRetiro{
+  padding-left: 2%;
+  text-align: left;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.valorRetiro{
+  padding-right: 2%;
+  text-align: right;
+  font-size: x-large;
+  font-weight: 300;
+  
+}
+
+/* OPCION CONSIGNAR */
+#contendorBotonyTituloConsignar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+#tituloConsignarDinero{
+  margin-right: 35%;
+  margin-top: 1.5%;
+}
+
+#contenedorElementosInputConsignar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  font-size: 20px;
+  gap: 10%;
+}
+
+#contenedorTablaConsignar {
+  border: 6px solid #002e94;
+  margin-top: 1%;
+  width: 50%; 
+  height: 100%;
+}
+
+#botonCerrarVentanaConsignar { 
+  border: none;
+  border-bottom: #002e94 5px solid;
+  margin: 2%;
+  width: 10%;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  background-color: transparent;
+}
+
+#botonConsignar{ 
+  width: 30%;
+  height: 6vh;
+  font-size: 20px;
+  text-align: center;
+  background-color: #002e94;
+  border: #002e94 5px solid;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+#campoConsignar{
+  width: 35%;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  border: #002e94 5px solid;
+}
+
+.filasTablaSaldoConsignar{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.filasTablaSaldoConsignar2{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.separacionSaldoConsignar{
+  margin-left: 77.5%;
+}
+
+.separacionSaldoConsignar2{
+  margin-left: 88%;
+}
+
+/* OPCION TRANSFERENCIA */
+#contenedorInputInformacion{
+  width: 80%;
+  height: 30%;
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.datosTranferencia{
+  width: 25%;
+  height: 100%;
+  width: 35%;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  border: #002e94 5px solid;
+}
+
+.datosTranferencia::placeholder{
+  color: #000000;
+}
+
+#contenedorBotonYInputTransferir{
+  width: 80%;
+  height: 30%;
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+#montoTransferir{
+  width: 32.1%;
+}
+
+#contenedorElementosInputTransferir{
+  width: 60%;
+  display: block;
+}
+
+#contenedorBotonYTituloTransferir{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 50%;
+  font-size: 20px;
+}
+
+#botonCerrarVentanaTransferir{
+  border: none;
+  border-bottom: #002e94 5px solid;
+  margin: 2%;
+  width: 10%;
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  background-color: transparent;
+}
+
+#botonTransferir{
+  width: 20%;
+  height: 6vh;
+  font-size: 20px;
+  text-align: center;
+  background-color: #002e94;
+  border: #002e94 5px solid;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 800;
+  margin-left: 20%;
+}
+
+.tituloMovimientos2{
+  width: 48%;
+  margin-right: 12%;
+  margin-top: 4%;
+}
+
+#tablaTransferencia{
+  width: 48%;
+  margin-right: 12%;
+  margin-top: 0.5%;
+  border: #002e94 5px solid;
+}
+
+.contenidoTransferencia td{
+  color: #000000;
+  font-size: 20px;
+  font-weight: 800;
+  border-bottom: #002e94 1px solid;
+}

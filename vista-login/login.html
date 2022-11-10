@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/css/style.css">
+    <link rel="shortcut icon" href="../style/img/logo.png" type="image/x-icon">
+    <title>Cajero electronico</title>
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="../style/img/logo.png" alt="">
+        <h1 class="tituloEncabezado">CAJERO <br> ELECTRÓNICO</h1>
+    </header>
+    <main class="contenedorPrincipal">
+        <section class="contenedorTitulo">
+            <h2 class="tituloInicioSesion">Inicio sesión</h2>
+        </section>
+        <section id="contenedorInputs" class="contenedorInputs">
+            <form class="formLogin" id="formularioInputs">
+                <input id="usuario" type="text" name="usuario" class="entradaUsuario" placeholder="Ingresa el usuario">
+                <input id="contrasena" type="password" name="contrasena" class="entradaUsuario" placeholder="Ingresa la clave del cajero" >
+                <input type="button" id="ingresar" class="botonContinuar" value="Continuar">
+            </form>
+            <p id="mensaje"></p>
+        </section>
+    </main>
+    <footer class="pieDePagina"></footer>
+<script src="../javaScript/login.js"></script>
+</body>
+</html>
