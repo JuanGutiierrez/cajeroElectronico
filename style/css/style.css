@@ -142,6 +142,7 @@ main {
 }
 
 /* VISTA PRINCIPAL */
+
 .contenedorBotones {
   width: 100%;
   height: 50vh;
@@ -484,6 +485,7 @@ main {
   margin-top: 1%;
   width: 50%; 
   height: 100%;
+  overflow: auto;
 }
 
 #botonCerrarVentanaConsignar { 
@@ -536,7 +538,7 @@ main {
   width: 90%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; 
   margin-top: 2%;
   margin-bottom: 2%;
   font-size: x-large;
@@ -544,11 +546,12 @@ main {
 }
 
 .separacionSaldoConsignar{
-  margin-left: 77.5%;
+  /* margin-left: 77.5%; */
+  
 }
 
 .separacionSaldoConsignar2{
-  margin-left: 88%;
+  /* margin-left: 88%; */
 }
 
 /* OPCION TRANSFERENCIA */

@@ -1,5 +1,5 @@
 // saldo inicial del usuario como dato quemado
-let saldoUsuario = 1000000000;
+let saldoUsuario = 90000000000;
 let retiro;
 let consignacion;
 let transferencia;
@@ -210,7 +210,7 @@ botonRetirarDinero.addEventListener("click", () => {
     if (validarRetiro.test(campoRetiro.value)) {
       retiro = parseFloat(campoRetiro.value);
 
-      if (retiro < saldoUsuario) {
+      if (retiro <= saldoUsuario) {
         saldoUsuario -= retiro;
         console.log(saldoUsuario);
         guardadoFechaRetiro.push(fecha);
@@ -561,7 +561,7 @@ botonTransferirDinero.addEventListener("click", () => {
     ) {
       transferencia = parseFloat(montoTransferir.value);
 
-      if (transferencia < saldoUsuario) {
+      if (transferencia <= saldoUsuario) {
         // validación saldo en cuenta
         saldoUsuario -= transferencia;
         console.log("El saldo restante es " + saldoUsuario);
