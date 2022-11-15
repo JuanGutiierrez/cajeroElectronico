@@ -36,7 +36,7 @@ let fecha = `${dia}/${mes}/${year}`;
 botonCerrar.addEventListener("click", () => {
   contenedorOperaciones.innerHTML = ""; // Limpiamos el html de trassacciones anteriores
   // creamos los botones para confirmar no no la terminación del menú principal del cajero
-  contenedorBotones.setAttribute("style", "display:none")
+  contenedorBotones.setAttribute("style", "display:none");
   contenedorOperaciones.innerHTML = `
       <article class"contenedorOpcionesCerrarSesion">
         <section class="tituloCerraSesion">
@@ -53,7 +53,7 @@ botonCerrar.addEventListener("click", () => {
   // con los botones creados en el innetHML creamos los eventos para salir o solo limpiar la pantalla
   salir.addEventListener("click", () => {
     contenedorBotones.setAttribute('style', 'display:flex')
-    window.location = "../vista-login/login.html";
+    window.location = "./vista-login/login.html";
   });
 
   noSalir.addEventListener("click", () => {
@@ -112,6 +112,8 @@ botonSaldo.addEventListener("click", () => {
 
 }); // fin botón saldo
 
+
+// vector para guardar operaciones
 let guardadoFechaRetiro = [];
 let guardadoValorRetiro = [];
 
@@ -189,6 +191,7 @@ botonRetirarDinero.addEventListener("click", () => {
     contenedorBotones.setAttribute("style", "display: flex");
     contenedorOperaciones.innerHTML = ""
   });
+  
 
   for (let i = 0; i < guardadoValorRetiro.length; i++) {
 
@@ -209,7 +212,7 @@ botonRetirarDinero.addEventListener("click", () => {
 
     if (validarRetiro.test(campoRetiro.value)) {
       retiro = parseFloat(campoRetiro.value);
-
+      
       if (retiro <= saldoUsuario) {
         saldoUsuario -= retiro;
         console.log(saldoUsuario);

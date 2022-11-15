@@ -2,9 +2,11 @@
 const usuarios = document.querySelector('#usuario');
 const contrasenas = document.querySelector('#contrasena');
 const ingresar = document.querySelector('#ingresar');
-const entradas = document.querySelectorAll('.entrada');
+const entradas = document.querySelectorAll('.entradaUsuario');
 const formularioInputs = document.querySelector('#formularioInputs');
 const saldo = document.querySelector('#saldo');
+const error = document.querySelector('#error');
+error.setAttribute('style', 'display:none');
 console.log(entradas);
 
 // base de datos de los clientes
@@ -26,22 +28,21 @@ const validarForm = (e)=>{
         case 'usuario':
             if(validarUsuario.test(e.target.value)){
                 console.log('Caracteres de usuario correctos')
-                usuarios.classList.add('correcto')
-                usuarios.classList.remove('incorrecto')
+               
+                error.setAttribute('style', 'display:none');
             }else{
                 console.log('Caracteres de usuario incorrectos')
-                usuarios.classList.add('incorrecto')
-                usuarios.classList.remove('correcto')
+                error.setAttribute('style', 'display:block');
             }
         break;
 
         case 'contrasena':
             if(validadContrasena.test(e.target.value)){
                 console.log('Caracteres de contraseña correctos')
-                contrasenas.classList('correcto')
-                contrasenas.classList('incorrecto')
+                error.setAttribute('style', 'display:none');
             }else{
                 console.log('Caracteres de contraseña incorrectos')
+                error.setAttribute('style', 'display:block');
             }
         break;
     }
@@ -49,7 +50,7 @@ const validarForm = (e)=>{
  // validar que el usuario ingresado tenga los caracteres correctos
     entradas.forEach((entrada) => {
     entrada.addEventListener('blur', validarForm)
-    
+
 });
 
 // Validar si el usuario o contraseña está en la base de datos y contar errores
@@ -78,7 +79,7 @@ ingresar.addEventListener('click', (e)=>{
         }
 
     }
-    if(contadorErrores >= 3){
+    if(contadorErrores >= 2){
         // ingresar.href = "../html/loginErrado.html"  
         formularioInputs.setAttribute('action','loginErrado.html')
         window.location = "../vista-login-errado/loginErrado.html"
