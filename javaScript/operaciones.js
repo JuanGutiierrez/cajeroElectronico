@@ -1,5 +1,5 @@
 // saldo inicial del usuario como dato quemado
-let saldoUsuario = 90000000000;
+let saldoUsuario = 5000000;
 let retiro;
 let consignacion;
 let transferencia;

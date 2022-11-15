@@ -13,10 +13,8 @@ console.log(entradas);
 const usuariosValidos = ['Andres', 'Mario', 'Mayra', 'Juan', 'Suzana'];
 const contrasenasValidas = ['1234', '3456', '7899', '0987', '0988'];
 let tamanhoVector = usuariosValidos.length;
-let contrasenaEncontrado = false;
-let usuarioEncontrado = false;
 let contadorErrores = 0;
-let position = 0;
+
 
 // Expresiones regulares
 const validarUsuario = /^[a-zA-ZÀ-ÿ\s]{3,40}$/;
@@ -67,7 +65,6 @@ ingresar.addEventListener('click', (e)=>{
                 console.log(usuarioEncontrado);
                 console.log('La contraseña está en la base de datos');
                 console.log(usuarioEncontrado);
-                position = i;
                 window.location="../index.html";
                 break;
             }
@@ -79,7 +76,7 @@ ingresar.addEventListener('click', (e)=>{
         }
 
     }
-    if(contadorErrores >= 2){
+    if(contadorErrores >= 3){
         // ingresar.href = "../html/loginErrado.html"  
         formularioInputs.setAttribute('action','loginErrado.html')
         window.location = "../vista-login-errado/loginErrado.html"
